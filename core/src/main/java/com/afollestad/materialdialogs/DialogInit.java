@@ -53,7 +53,7 @@ class DialogInit {
     public static int getInflateLayout(MaterialDialog.Builder builder) {
         if (builder.customView != null) {
             return R.layout.md_dialog_custom;
-        } else if (builder.items != null && builder.items.length > 0 || builder.adapter != null) {
+        } else if (builder.items != null && builder.items.length > 0 || builder.adapter != null || builder.createDefaultAdapter()) {
             return R.layout.md_dialog_list;
         } else if (builder.progress > -2) {
             return R.layout.md_dialog_progress;
