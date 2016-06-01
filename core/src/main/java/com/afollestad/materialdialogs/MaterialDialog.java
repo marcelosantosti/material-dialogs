@@ -1343,12 +1343,13 @@ public class MaterialDialog extends DialogBase implements
             return dialog;
         }
 
-        public boolean createDefaultAdapter() {
-            return createDefaultAdapter;
+        public Builder createDefaultAdapter(boolean createDefaultAdapter) {
+            this.createDefaultAdapter = createDefaultAdapter;
+            return this;
         }
 
-        public void createDefaultAdapter(boolean createDefaultAdapter) {
-            this.createDefaultAdapter = createDefaultAdapter;
+        public boolean createDefaultAdapter() {
+            return this.createDefaultAdapter;
         }
     }
 

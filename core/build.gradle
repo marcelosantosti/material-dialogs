@@ -2,12 +2,12 @@ apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
 group='com.github.marcelosantosti'
-version = '0.8.5.10'
+version = '0.8.5.11'
 
 ext {
     PUBLISH_GROUP_ID = 'com.afollestad.material-dialogs'
     PUBLISH_ARTIFACT_ID = 'core'
-    PUBLISH_VERSION = '0.8.5.10'
+    PUBLISH_VERSION = '0.8.5.11'
     SUPPORT_LIBRARY_VERSION = '23.4.0'
 }
 
