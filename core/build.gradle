@@ -1,4 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.marcelosantosti'
+version = '0.8.5.9'
 
 ext {
     PUBLISH_GROUP_ID = 'com.afollestad.material-dialogs'
