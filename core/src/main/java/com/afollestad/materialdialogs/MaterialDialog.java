@@ -441,6 +441,7 @@ public class MaterialDialog extends DialogBase implements
         protected int inputMaxLength = -1;
         protected int inputRangeErrorColor = 0;
         protected int[] itemIds;
+        private boolean createDefaultAdapter;
 
         protected String progressNumberFormat;
         protected NumberFormat progressPercentFormat;
@@ -1340,6 +1341,14 @@ public class MaterialDialog extends DialogBase implements
             MaterialDialog dialog = build();
             dialog.show();
             return dialog;
+        }
+
+        public boolean createDefaultAdapter() {
+            return createDefaultAdapter;
+        }
+
+        public void createDefaultAdapter(boolean createDefaultAdapter) {
+            this.createDefaultAdapter = createDefaultAdapter;
         }
     }
 

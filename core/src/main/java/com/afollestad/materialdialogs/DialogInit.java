@@ -267,7 +267,7 @@ class DialogInit {
         // Setup list dialog stuff
         if (builder.listCallbackMultiChoice != null)
             dialog.selectedIndicesList = new ArrayList<>();
-        if (dialog.listView != null && (builder.items != null && builder.items.length > 0 || builder.adapter != null)) {
+        if (dialog.listView != null && (builder.items != null && builder.items.length > 0 || builder.adapter != null || builder.createDefaultAdapter())) {
             dialog.listView.setSelector(dialog.getListSelector());
 
             // No custom adapter specified, setup the list with a MaterialDialogAdapter.
